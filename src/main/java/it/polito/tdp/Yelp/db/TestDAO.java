@@ -20,7 +20,9 @@ public class TestDAO {
 		}
 		long endTime = System.nanoTime();
 		System.out.println("Calcolate " + allStars.size() + " stelle in " + (endTime - startTime) / 1000000 + " ms");
-
+		//il tempo per la gran parte è dovuto alla parte nel connect db
+		//aprire una connessione ogni volta che faccio una query è molto poco efficente
+		
 	}
 
 }
